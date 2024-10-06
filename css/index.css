@@ -1,0 +1,230 @@
+/* Custom Styles */
+.navbar {
+    background-color: #2455d1;
+}
+
+.navbar-brand, .nav-link, .email-phone {
+    color: white !important;
+}
+
+.email-phone {
+    text-align: right;
+}
+
+.whatsapp-link {
+    display: block;
+    color: #25D366;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Custom mobile styling */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    /* Center the email-phone section in mobile view */
+    .email-phone {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    width: 100%;
+    height: 350px; /* Adjust the height based on your content */
+    object-fit: cover;
+}
+
+/* Additional styles for carousel caption */
+.carousel-caption {
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: white;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.certifications h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.certification-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.certification-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.certification-card img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.certification-card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #060707;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+/* Short Menu Styles */
+.short-menu {
+    margin-top: 2px;
+    background-color: #1f3c88; /* Changed background color for better visibility */
+    padding: 10px 0;
+}
+
+.short-menu .nav-link {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white; /* Changed to white for better contrast */
+}
+
+.short-menu .nav-link:hover {
+    color: #ffdd57; /* Change hover color for visibility when hovered */
+    background-color: #333; /* Add background change for better distinction when hovered */
+}
+
+
+/* Social Media Link */
+.social-media {
+    display: flex;
+    gap: 15px; /* Space between social media links */
+}
+
+.social-link {
+    color: white; /* Use white text for visibility */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-link:hover {
+    color: #ffcc00; /* Yellow on hover for contrast */
+}
+
+.social-link img {
+    width: 30px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-link img:hover {
+    opacity: 0.8; /* Optional: dim the icon on hover */
+}
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-end; /* Align to the right */
+        margin-top: 10px; /* Add some space above the social links */
+    }
+
+    .social-link {
+        margin-bottom: 5px; /* Space between the vertical links */
+    }
+}
+
+
+
+/* Modal Styles */
+.contact-modal {
+    position: fixed;
+    right: -100%; /* Start hidden outside the screen */
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Smooth slide-in transition */
+}
+
+.contact-modal.active {
+    right: 0; /* Slide-in effect when active */
+}
+
+.contact-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2455d1;
+}
+
+/* Backdrop Styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none; /* Hidden by default */
+}
+
+.modal-backdrop.active {
+    display: block; /* Show backdrop when active */
+}
+
+
+
+/* About Section Styles */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.about-section .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-credentials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-credentials p {
+    font-size: 1rem;
+    line-height: 1.8;
+}

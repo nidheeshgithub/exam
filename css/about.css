@@ -1,0 +1,160 @@
+/* Custom Styles */
+.navbar {
+    background-color: #2455d1;
+}
+
+.navbar-brand, .nav-link, .email-phone {
+    color: white !important;
+}
+
+.email-phone {
+    text-align: right;
+}
+
+.whatsapp-link {
+    display: block;
+    color: #25D366;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Custom mobile styling */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    /* Center the email-phone section in mobile view */
+    .email-phone {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Custom mobile styling */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+}
+    /* Center the search box in mobile view */
+    .search-box {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Center the email-phone section below the search box */
+    .email-phone {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+/* About section */
+.about-section {
+    padding: 50px 0;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-credentials {
+    padding-left: 30px;
+}
+
+.contact-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-box h5 {
+    margin: 10px 0 0;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #060707;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+/* Custom Modal Styles */
+.contact-modal {
+    position: fixed;
+    right: 0; /* Default: Align on the right */
+    top: 0;
+    width: 30%; /* Adjust size as needed */
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1051; /* Ensure modal is on top */
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+}
+
+.contact-modal.active {
+    display: block; /* Show the modal when active */
+}
+
+.contact-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2455d1;
+}
+
+/* Backdrop to deactivate background content */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040; /* Ensure it sits just behind the modal */
+    display: none;
+}
+
+.modal-backdrop.active {
+    display: block; /* Show the backdrop when the modal is active */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .contact-modal {
+        left: 0; /* On mobile, align on the left */
+        right: auto; /* Remove right alignment */
+        width: 100%; /* Take full width on mobile */
+        height: auto; /* Adjust height as needed for mobile */
+    }
+}
+
